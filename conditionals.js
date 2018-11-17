@@ -8,6 +8,16 @@ console.log("*** Problem 1: R-rated ***");
 let age = READLINE.question("Enter your age: ");
 let withAdult = READLINE.question("Are you with an adult? (yes or no): ");
 
+if(age>=18 || withAdult == "yes") {
+	console.log("Congrats you can see the movie!");
+}
+else{
+	console.log("Sorry, you can't see the movie.");
+}
+if(age < 18 && withAdult == "no") {
+	console.log("Sorry you can't see the movie");
+}
+
 
 // **** Problem 2: Umbrella ****
 // You should bring an umbrella when you travel, but only if it is raining.
@@ -18,6 +28,11 @@ console.log("*** Problem 2: Umbrella ***");
 let raining = READLINE.question("Is it raining? (yes or no): ");
 let thunderstorming = READLINE.question("Is it thunderstorming? (yes or no): ");
 
+if(raining =='yes' && thunderstorming=='no'); {
+	console.log("Bring an aumbrella");
+} else{ console.log(" Don't bring umbrella");
+	}
+
 
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
@@ -27,6 +42,13 @@ console.log("*** Problem 3: Monkey Trouble ***");
 let bubbles = READLINE.question("Is Bubbles smiling? (yes or no): ");
 let spankey = READLINE.question("Is Spankey smiling? (yes or no): ");
 
+if(bubbles=='yes' && spankey=='no');
+{
+	console.log(" Not in trouble");}
+	if(bubbles=='yes' && spankey=="yes");
+	{
+		console.log("You are in trouble!!")
+	}
 
 // **** Problem 4: First Place ****
 // Write code that prints the largest of three scores. If there is a tie for
@@ -35,6 +57,14 @@ console.log("*** Problem 4: First Place ***");
 let score1 = READLINE.question("Enter the first score: ");
 let score2 = READLINE.question("Enter the second score: ");
 let score3 = READLINE.question("Enter the third score: ");
+if( score1>score2); 
+{
+	console.log("Score 1 is the Winner!");
+	if(score2<score3);
+	{
+		console.log("Score 3 is the Winner!");
+	}
+}
 
 
 // **** Problem 5: Phone Shopping ****
@@ -48,7 +78,27 @@ let score3 = READLINE.question("Enter the third score: ");
 // money they have.
 console.log("*** Problem 5: Phone Shopping ***");
 let money = READLINE.question("How much money do you have?: ");
+if(money>=$30);{
+	console.log("You can buy a prepaid phone!");{
+		else{
+			console.log("You can't get any phone, sorry!");
+		}
+	}
+	if(money>=$100);{
+		console.log("You can get an amazing bottom-tier phone, yeah");{
+			else{
+				console.log("You can buy three prepaid phones not a bottom-tier phone.");
+				if(money>=$300);{
+					console.log(" You can buy a middle-tier phone!");
+					if(money>=$600);{
+						console.log("You can get a top-tier phone!")
+					}
 
+				}
+			}
+		}
+	}
+}
 
 // **** Problem 6: Guess My Number ****
 // Write code that plays a simple number guessing game with a user. You can
