@@ -47,7 +47,7 @@ problem1();
 
 
 // **** Problem 4:
-/******************************************************************************
+/**************************************************************************
                           parrotTrouble(talking, hour)
 Instructions:
 We have a loud talking parrot. The "talking" parameter is a boolean that
@@ -99,11 +99,13 @@ alarmClock(1, false) → "7:00"
 alarmClock(6, true) → "off"
 alarmClock(0, false) → "10:00"
 *******************************************************************************/
-
+function alarmClock(day,vacation) {
+  
+}
 
 
 // Remove comment below to test this function.
-//testAlarmClock();
+testAlarmClock();
 
 /****************************************************************************
                                     Tests

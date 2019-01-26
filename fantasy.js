@@ -16,7 +16,7 @@ let fantasyNameCreator = {
     let newFirst = this.firstName.substring(0,3);
     let newLast = this.lastName.substring(0,2);
     let fantasyName = newFirst + newLast.toLowerCase();
-    return newFirstName;
+    return NewFirstName;
         /******************************************************************************
       This method returns the user's new first name. To do so, concatenate the
       first 3 letters of their real first name and the first 2 letters of their
@@ -48,7 +48,9 @@ let fantasyNameCreator = {
       This method returns the user's full honorific. To do so, concatenate their
       title, " of ", and the name of the street they live on.
     *******************************************************************************/
-
+    this.street = READLINE.question("Please enter the street you live on:  ");
+    this.fantasyName = this.getTitle() + " of " +  this.street;
+    return this.fantasy;
 
   },
 

@@ -37,8 +37,12 @@ midThree([1, 2, 3]) → [1, 2, 3]
 *******************************************************************************/
 
 function midThree(nums) {
-  if(nums.substring(1,nums.length-2)){
-    return nums.substring(1,nums.length-2);
+  let center= math.floor(nums.length/2);
+ 
+  let start = center - 1;
+  let end = center + 1
+  nums.slice(start,end);
+  return end + start;
   }
 
 }

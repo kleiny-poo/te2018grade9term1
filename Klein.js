@@ -4,4 +4,4 @@
 
 
 
-console.log("happy".length);
+console.log("happy".length)

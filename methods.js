@@ -10,7 +10,7 @@ let bankAccount = {
   bankName: 'Chase Bank',
   deposit: function(monies) {
     console.log( `Before depositing any money your balance was ${this.balance} you have deposited ` + monies);
-    this.balance = monies + this.balance;
+   this.balance = monies + this.balance; 
 
 
   },

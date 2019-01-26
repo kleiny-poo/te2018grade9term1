@@ -35,7 +35,7 @@ if(age < 17) {
 
 let dog = {
 	numLegs: 4
-	amputate: function(legs) {
+	amputate:function(legs) {
 		this.numLegs = this.numLegs - legs;
 	}
 };
@@ -45,9 +45,13 @@ console.log(`This is your new puppy! He has ${dog.numLegs}`)
 
 
 let fellow = "Humpty Dumpty";
+let gap = fellow.indexOf(" ");
+let firstName = fellow.substrate(0, gap);
+
+console.log(`String: ${fellow}`);
 let len = =fellow, length;
 console.log(`Length: ${len}`);
 let six = =fellow.charAt(7);
 console.log(`Char at index 7: ${seven}`);
-console.log(`Index of D: ${fellow.indexOf('D')};
+console.log(`Index of D: ${fellow.indexOf('D')}`)
 
